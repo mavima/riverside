@@ -1,0 +1,97 @@
+/*
+ Theme Name:   Twenty Nineteen Child
+ Description:  Twenty Nineteen Child Theme
+ Author:       Maria Manninen
+ Template:     twentynineteen
+ Version:      1.0.0
+*/
+
+/* text types */
+h1,h2, h3, h4, h5, h6 {
+    font-family: 'Philosopher', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.quote-text {
+    font-family: 'Zeyada';
+    font-size: 1.6rem;
+}
+
+.main-title {
+    font-family: 'Philosopher', sans-serif; 
+
+}
+
+#masthead {
+    background-color: #0D2B5B;
+    margin-top: 0;
+    padding-top: 0;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+.left-div {
+    display: none;
+}
+
+.site-logo {
+    right: 50%;
+    height: 80%;
+}
+
+.site-logo .custom-logo-link {
+    height: 10vh;
+    width: 10vh;
+}
+
+.site-description {
+    color: #0D2B5B;
+}
+
+.site-branding {
+    margin: 0;
+}
+
+/* header menu */
+#menu-header-menu {
+    background-color: #0D2B5B;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+#site-navigation {
+  margin-top: 6vh;
+}
+
+#mega-menu-wrap-menu-1 {
+    background-color: #0D2B5B;
+}
+
+.navbar-default .navbar-nav > .active:not(.btn) > a {
+    color: #b3b3ff;
+}
+
+
+/* button text */
+.entry .entry-content .wp-block-button .wp-block-button__link:not(.has-background) {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    /* background-color: #0D2B5B; */
+}
+
+
+/* remove giant twentynineteen title */
+.entry .entry-header {
+    overflow: hidden;
+    display: none;
+  }
+
+/* remove white space above the banner img */
+  .entry .entry-content *.alignfull{
+    margin-top: 0;
+}
+

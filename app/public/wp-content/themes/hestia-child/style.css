@@ -1,0 +1,130 @@
+/*
+ Theme Name:   Hestia Child
+ Description:  Hestia Child Theme
+ Author:       Maria Manninen
+ Template:     hestia
+ Version:      1.0.0
+*/
+
+/* text types */
+h1,h2, h3, h4, h5, h6, .carousel h1.hestia-title {
+    font-family: 'Philosopher', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.quote-text {
+    font-family: 'Zeyada';
+    font-size: 3rem;
+}
+
+.navbar-default, .navbar.navbar-transparent {
+    background-color: #0D2B5B;
+}
+
+/* header menu */
+#menu-header-menu li a {
+    font-weight: 700;
+    color: white;
+    background-color: #0D2B5B;
+}
+
+#menu-header-menu li a:hover {
+    font-weight: 900;
+}
+
+/* links on sub-menus */
+#menu-header-menu ul li a {
+    color: #0D2B5B !important;
+    background-color: white;
+}
+
+/* hamburger icon to open mobile menu */
+.navbar button.navbar-toggle {
+    color: white;
+}
+
+/* caret to open sub-menu in mobile menu */
+@media (max-width: 768px) {
+    .navbar .navbar-nav .dropdown a .caret {
+        background-color: white;
+    }
+}
+
+/* active page on header menu */
+.navbar-default .navbar-nav > .active:not(.btn) > a {
+    color: #b3b3ff !important;
+}
+
+
+.navbar-brand {
+    height: 80%;
+}
+
+/* front page image */
+.header-filter {
+    opacity: 0.5;
+}
+
+/* button */
+.btn {
+    border-radius: 8px !important;
+}
+
+a.btn.btn-primary {
+   font-weight: 700;
+   border-radius: 6px;
+}
+
+/* page banner */
+#primary.boxed-layout-header.page-header.header-small {
+    display: none;
+}
+
+/* text box on sub pages */
+.side-text-box {
+    opacity: 0.8;
+}
+
+
+/* images on about page */
+.about-link-image {
+    height: 25vh;
+    overflow: hidden;
+}
+
+/* quote */
+blockquote {
+    border: none;
+}
+
+blockquote p {
+    font-style: initial;
+}
+
+/* paddings and margins */
+.top-margin {
+    margin-top: 8rem;
+}
+
+.side-paddings {
+    padding: 0 15rem;
+}
+
+/* media query tablet */
+
+@media (min-width: 481px) and (max-width: 768px){
+    .top-margin {
+        margin-top: 13rem;
+    }
+}
+
+/* media query phone */
+@media (max-width: 768px) {
+
+    .side-paddings {
+        padding: 0 2rem;
+    }
+}
