@@ -6,7 +6,19 @@
  Version:      1.0.0
 */
 
+.container {
+    width: 90%;
+    /* max-width: 1200px; */
+}
+
 /* text types */
+
+@font-face {
+    font-family: "Arkhip";
+    src: url("./fonts/Arkhip_font.otf");
+    src: url("./fonts/Arkhip_font.ttf");
+}
+
 h1,h2, h3, h4, h5, h6, .carousel h1.hestia-title {
     font-family: 'Philosopher', sans-serif;
 }
@@ -18,11 +30,50 @@ body {
 .quote-text {
     font-family: 'Zeyada';
     font-size: 3rem;
+    color: #0D2B5B;
 }
 
+.golden-title {
+    font-family: 'Arkhip', 'Philosopher', sans-serif;
+    color: rgba(83,69,22,0.8);
+}
+
+h1.hestia-title.title-in-content {
+    display: none;
+}
+
+.blue {
+    color: #0D2B5B !important;
+}
+
+.padded {
+    padding-right: 1rem;
+}
+
+/* home page content */
+.carousel .page-header .row {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+/* home page quote */
+.carousel span.sub-title {
+    font-family: 'Zeyada';
+    font-size: 4rem;
+    color: #0D2B5B;
+    width: 50%;
+    margin-left: 40%;
+}
+
+/* navbar on the top of the page */
 .navbar-default, .navbar.navbar-transparent {
     background-color: #0D2B5B;
 }
+
+.container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
+    min-height: 85px;
+}
+
 
 /* header menu */
 #menu-header-menu li a {
@@ -33,6 +84,10 @@ body {
 
 #menu-header-menu li a:hover {
     font-weight: 900;
+}
+/* logo in navbar */
+.navbar .navbar-header .navbar-brand img {
+    max-height: 75px;
 }
 
 /* links on sub-menus */
@@ -58,14 +113,37 @@ body {
     color: #b3b3ff !important;
 }
 
-
+/* logo in navbar */
 .navbar-brand {
-    height: 80%;
+    height: 90%;
 }
 
 /* front page image */
 .header-filter {
-    opacity: 0.5;
+    opacity: 0.6;
+}
+
+.header-filter::before {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* front page big logo */
+#gallery-1 img {
+    border-radius: 50%;
+    min-height: 250px;
+    min-width: 250px;
+    margin-left: 70%;
+}
+
+/* media query phone */
+@media (max-width: 768px) {
+    #gallery-1 img {
+        min-height: 150px;
+        min-width: 150px;
+        position: relative;
+        margin-left: 70%;
+        margin-top: -5vh;
+    }
 }
 
 /* button */
@@ -78,21 +156,83 @@ a.btn.btn-primary {
    border-radius: 6px;
 }
 
-/* page banner */
+/* blog category on front page */
+h6.category {
+    display: none;
+}
+
+/* blog excerpt on front page */
+p.card-description {
+    font-size: 1.6rem;
+}
+
+/* contact form on front page */
+.card-contact {
+    display: none;
+}
+
+/* page banner */ 
 #primary.boxed-layout-header.page-header.header-small {
     display: none;
 }
+
+/* .page:not(.home) .main {
+    margin-top: 60px;
+} */
+
+
 
 /* text box on sub pages */
 .side-text-box {
     opacity: 0.8;
 }
 
+/* images on header banner */
+.header-filter {
+    filter: grayscale(100%);
+}
 
 /* images on about page */
 .about-link-image {
     height: 25vh;
     overflow: hidden;
+}
+
+/* images black-and-white */
+.class-image {
+    filter: grayscale(100%);
+}
+
+/* images with shadow */
+.shadow-img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wp-block-image {
+    width: fit-content;
+}
+
+/* blog page */
+.card img {
+    filter: grayscale(100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-description.entry-content p {
+    font-size: 2rem;
+}
+
+h6.category.text-info {
+    display: none;
+}
+
+/* single blog text page */
+.single-post-wrap img {
+    filter: grayscale(100%);
+}
+
+.entry-categories {
+    display: none;
 }
 
 /* quote */
@@ -102,6 +242,17 @@ blockquote {
 
 blockquote p {
     font-style: initial;
+}
+
+/* contact form */
+div.wpforms-container-full .wpforms-form textarea {
+    background-color: #f2f2f2 !important;
+}
+
+/* confirmation message after contact form */
+.wpforms-confirmation-container-full {
+    background-color: rgba(147, 151, 178, 0.24);
+    border-color: rgba(147, 151, 178, 0.65);
 }
 
 /* paddings and margins */
@@ -127,4 +278,18 @@ blockquote p {
     .side-paddings {
         padding: 0 2rem;
     }
+
+    .navbar .title-logo-wrapper {
+        position: absolute;
+        left: 45%;   
+    }
+}
+
+.footer.footer.footer-black {
+    background-color: #40455A;
+}
+
+/* Hide Wordpress theme on footer */
+.copyright.pull-right {
+    display: none;
 }

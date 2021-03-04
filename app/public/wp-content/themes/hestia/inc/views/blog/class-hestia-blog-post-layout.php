@@ -53,8 +53,8 @@ class Hestia_Blog_Post_Layout {
 
 		$article_template = '';
 
-		$article_template .= '<article 
-		id="post-' . esc_attr( $args['pid'] ) . '" 
+		$article_template .= '<article
+		id="post-' . esc_attr( $args['pid'] ) . '"
 		class="' . join( ' ', get_post_class( $args['article_class'], $args['pid'] ) ) . '">';
 		$article_template .= '<div class="' . esc_attr( $args['row_class'] ) . '">';
 
